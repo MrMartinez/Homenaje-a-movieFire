@@ -15,11 +15,15 @@ function updateMovie(id,data) {
 }
 
 function getMovieDetails(id) {
-    moviesRef.child(id).once("value", data => {
-        console.log("getMovieDetails", data.val());
-
-    });
+    return new Promise((resolve, reject)=>{
+        moviesRef.child(id).once("value", data => {
+            console.log("getMovieDetails", data.val());
+    
+        })
+    })
+   
 }
+
 function getMovies() {
     moviesRef.on("value", data => {
         console.log("getMovies", data.val());
