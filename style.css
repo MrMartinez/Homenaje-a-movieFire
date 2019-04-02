@@ -3,3 +3,9 @@ body{
     color: lightgreen;
     font-family: monospace
 }
+#details{
+    display: none;
+    background: green;
+    color: white;
+    font-style: italic;
+}
