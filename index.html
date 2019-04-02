@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-   <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>MoviFire</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <h1>Movie Fire</h1>
+    <label for="title">Pelicula </label>
+    <input type="text" id="title" placeholder="Ingrese titulo de la pelicula">
+    <ul id="listPeliculas"></ul>
 
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
@@ -25,6 +27,6 @@
       };
       firebase.initializeApp(config);
     </script>
-   <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
